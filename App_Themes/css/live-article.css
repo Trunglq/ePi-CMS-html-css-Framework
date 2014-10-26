@@ -1,0 +1,257 @@
+@import "normalize.css" screen, projection;
+@import "components.css" screen, projection;
+@import "main.css" screen, projection;
+@import "article.css" screen, projection;
+/*
+ * define variable
+ */
+/* 
+ * live article 
+ */
+.main-article.live .meta {
+  margin-bottom: 5px;
+}
+.main-article.live .meta > p {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.main-article.live > article {
+  float: left;
+  width: 770px;
+}
+.main-article.live > article #livestream .events {
+  margin-bottom: 10px;
+}
+.main-article.live > article #livestream .events li {
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+.main-article.live > article #livestream .events li .event-meta {
+  border-left: 1px solid #fff;
+  float: left;
+}
+.main-article.live > article #livestream .events li .event-meta time {
+  font-weight: bold;
+  vertical-align: top;
+  padding-top: 20px;
+  width: 40px;
+  display: inline-block;
+  font-size: 16px;
+}
+.main-article.live > article #livestream .events li .event-meta .type {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0;
+}
+.main-article.live > article #livestream .events li .event-content {
+  margin-left: 130px;
+  padding-left: 30px;
+  border-left: 1px solid #eee;
+  min-height: 65px;
+}
+.main-article.live > article #livestream .events li .event-content p,
+.main-article.live > article #livestream .events li .event-content div {
+  margin-bottom: 10px;
+}
+.main-article.live > article #livestream .events li .event-content p:last-child,
+.main-article.live > article #livestream .events li .event-content div:last-child {
+  margin-bottom: 0;
+}
+.main-article.live > article #livestream .events li:before,
+.main-article.live > article #livestream .events li:after {
+  display: table;
+  clear: both;
+}
+.main-article.live > article #livestream .events li:after {
+  content: "";
+}
+.main-article.live > article #livestream .events li:hover .event-content {
+  border-left: 1px solid #c41f25;
+}
+.main-article.live > article #livestream .events li.comment .event-meta .type {
+  background: transparent url('../img/livestream/comment.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.video .event-meta .type {
+  background: transparent url('../img/livestream/video.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.picture .event-meta .type {
+  background: transparent url('../img/livestream/picture.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-goal .event-meta .type {
+  background: transparent url('../img/livestream/soccer-goal.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-fulltime .event-meta .type {
+  background: transparent url('../img/livestream/soccer-fulltime.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-start .event-meta .type {
+  background: transparent url('../img/livestream/soccer-start.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-arbiter .event-meta .type {
+  background: transparent url('../img/livestream/soccer-arbiter.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-substitute .event-meta .type {
+  background: transparent url('../img/livestream/soccer-substitute.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-yellow-card .event-meta .type {
+  background: transparent url('../img/livestream/soccer-yellow-card.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-red-card .event-meta .type {
+  background: transparent url('../img/livestream/soccer-red-card.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-penalty .event-meta .type {
+  background: transparent url('../img/livestream/soccer-penalty.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-injure .event-meta .type {
+  background: transparent url('../img/livestream/soccer-injure.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.quotation .event-meta .type {
+  background: transparent url('../img/livestream/quotation.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .events li.soccer-fomation .event-meta .type {
+  background: transparent url('../img/livestream/soccer-fomation.png') 0 0 no-repeat;
+}
+.main-article.live > article #livestream .cast {
+  background: #f7f7f7 url('../img/livestream/cast.png') 0 0 no-repeat;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  padding-left: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* 
+ * question answer article 
+ */
+.main-article.stream-live .meta {
+  margin-bottom: 5px;
+}
+.main-article.stream-live .meta > p {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.main-article.stream-live .stream-meta {
+  margin-bottom: 20px;
+}
+.main-article.stream-live .stream-meta > div:last-child {
+  width: 70%;
+  float: right;
+  border-left: 1px solid #dddddd;
+  padding-left: 10px;
+}
+.main-article.stream-live .stream-meta > div:last-child .sapo {
+  font-weight: normal;
+}
+.main-article.stream-live .stream-meta > div:last-child .guest article {
+  margin-bottom: 15px !important;
+}
+.main-article.stream-live .stream-meta > div:last-child .guest article figure {
+  height: 180px;
+}
+.main-article.stream-live .stream-meta > div:last-child .guest article header h1 {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.main-article.stream-live .stream-meta > div:last-child .guest article header summary {
+  font-style: italic;
+}
+.main-article.stream-live .stream-meta .time-location {
+  padding-right: 10px;
+  width: 30%;
+  float: left;
+}
+.main-article.stream-live .stream-meta .time-location div {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.main-article.stream-live .stream-meta .time-location div:last-child {
+  border-bottom: none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.main-article.stream-live .stream-meta .time-location div span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #ccc;
+  display: block;
+  margin-bottom: 5px;
+}
+.main-article.stream-live .stream-meta .time-location div time,
+.main-article.stream-live .stream-meta .time-location div address {
+  font-weight: bold;
+  font-size: 14px;
+  color: #c41f25;
+}
+.main-article.stream-live > article .content {
+  width: 770px;
+}
+.main-article.stream-live > article .content .timer {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  font-style: italic;
+  padding: 10px;
+  text-align: center;
+}
+.main-article.stream-live > article .content .timer span {
+  color: #c41f25;
+  display: inline-block;
+  padding: 0 5px;
+}
+.main-article.stream-live > article .content ul.stream {
+  margin-bottom: 20px;
+}
+.main-article.stream-live > article .content ul.stream li {
+  padding: 20px 0 20px 0px;
+  margin-left: 120px;
+  border-bottom: 1px solid #dddddd;
+}
+.main-article.stream-live > article .content ul.stream li .question {
+  position: relative;
+}
+.main-article.stream-live > article .content ul.stream li .question > p.author {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 5px;
+}
+.main-article.stream-live > article .content ul.stream li .question > p.author span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555;
+  display: inline-block;
+  padding: 0 5px;
+}
+.main-article.stream-live > article .content ul.stream li .question time {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #c41f25;
+}
+.main-article.stream-live > article .content ul.stream li .question .mini-content {
+  font-weight: bold;
+  font-size: 15px;
+}
+.main-article.stream-live > article .content ul.stream li .answer {
+  margin: 15px 0 0;
+  border-left: 1px solid #dddddd;
+  margin-left: 50px;
+  padding-left: 20px;
+}
+.main-article.stream-live > article .content ul.stream li .answer .author {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  color: #c41f25;
+}
+.main-article.stream-live > article .content ul.stream li .answer .mini-content .linebreak {
+  display: table;
+  padding-bottom: 10px;
+  clear: both;
+}
+.main-article.stream-live > article .content ul.stream li .answer .mini-content img {
+  max-width: 100%;
+}

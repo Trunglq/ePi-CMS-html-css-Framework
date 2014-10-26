@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Bm news</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="App_Themes/css/normalize.css">
+    <link rel="stylesheet" href="App_Themes/css/components.css">
+    <!-- <link rel="stylesheet" href="App_Themes/css/bootstrap-theme.min.css"> -->
+
+    <!-- CSS Implementing Plugins -->
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="App_Themes/css/main.css">
+    <link rel="stylesheet" href="App_Themes/css/topic.css">
+
+
+    <!-- JS modernizr -->
+    <script src="Jscripts/vendor/modernizr-2.6.2.min.js"></script>
+    <script>
+    (function(w, d, u) {
+        w.readyQ = [];
+        w.bindReadyQ = [];
+
+        function p(x, y) {
+            if (x == "ready") {
+                w.bindReadyQ.push(y);
+            } else {
+                w.readyQ.push(x);
+            }
+        };
+        var a = {
+            ready: p,
+            bind: p
+        };
+        w.$ = w.jQuery = function(f) {
+            if (f === d || f === u) {
+                return a
+            } else {
+                p(f)
+            }
+        }
+    })(window, document)
+    </script>
+</head>
+
+<body>
+
+    <!--=== Header ===-->
+    <header id="site-header" class="clearfix">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <!-- logo -->
+                <h1 class="logo">
+                    <a href="../" class="navbar-brand">
+                        <img src="App_Themes/img/logo.png" height="137" width="246" alt="" class="img-responsive">
+                    </a>
+                </h1>
+                <!-- search -->
+                <div class="search">
+                    <input type="text" placeholder="Enter search words" />
+                    <button><i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+                <!-- Top ads -->
+                <div class="top-ads">
+                    <img src="tempdata/ads/ads-728x90-2.jpg" width="728" height="90">
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+
+        <!-- Navbar -->
+        <div class="navbar navbar-default" data-spy="affix" data-offset-top="190" data-offset-bottom="200">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="themes">
+                                <li><a href="../default/">Default</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="../cerulean/">Style 2015</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="site-page">Pages<span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="site-page">
+                                <li><a href="feature.html">Feature</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="article.html">Article</a>
+                                </li>
+                                <li><a href="live-article.html">Live article</a>
+                                </li>
+                                <li><a href="qa-article.html">Question Answers article</a>
+                                </li>
+                                <li><a href="list-topic.html">List topic</a>
+                                </li>
+                                <li><a href="topic-detail.html">Topic detail</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="site-feature">Features<span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="site-feature">
+                                <li><a href="#story-style">Article style</a>
+                                </li>
+                                <li><a href="#story-layout">Article layout</a>
+                                </li>
+                                <li><a href="#zone-layout">Zone layout</a>
+                                </li>
+                                <li><a href="#list-style">List style and Grid</a>
+                                </li>
+                                <li><a href="#pagination-layout">Pagination layout</a>
+                                </li>
+                                <li><a href="#navbar-layout">Navbar Dropdown</a>
+                                </li>
+                                <li><a href="#button-style">Button style</a>
+                                </li>
+                                <li><a href="#form-layout">Form layout</a>
+                                </li>
+                                <li><a href="#tab-layout">Tab layout</a>
+                                </li>
+                                <li><a href="#alert-layout">Alerts layout</a>
+                                </li>
+                                <li><a href="#modal-layout">Dialogs layout</a>
+                                </li>
+                                <li><a href="#glyphicon-map">Glyphicon</a>
+                                </li>
+                                <li class="divider"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar -->
+    </header>
+    <!--=== End Header ===-->
+
+    <!--=== Main Content ===-->
+    <div class="container">
+        <main>
+            <section class="list-topic clearfix">
+                <section class="fw-feature clearfix">
+                    <header>
+                        <h1>
+                            <span>Featured Topic:</span>
+                            <a href="topic">U.S. Federal Budget</a> 
+                        </h1>
+                    </header>
+                    <article class="story">
+                        <figure class="cover">
+                            <a href="article.html">
+                                <img src="Tempdata/site/img-feature-2.jpg">
+                            </a>
+                        </figure>
+                        <header>
+                            <div class="meta">
+                                <time datetime="">10:31 ngày 30/09/2014</time>
+                            </div>
+                            <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                            </h1>
+                            <div class="summary">Construction of a giant controversial dam in Laos has been well underway since it began in late 2012. Laos is also set to push ahead with a second hydropower dam on the Mekong River this year in the face of growing concerns among its neighbors.
+                                <div>
+                        </header>
+                    </article>
+                </section>
+                <section class="fw-topic clearfix">
+                    <header>
+                        <h1>
+                            <a href="topic">Lorem ipsum dolor sit amet</a> 
+                        </h1>
+                    </header>
+                    <div class="four-cols">
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                    </div>
+
+                </section>
+                <section class="fw-topic clearfix">
+                    <header>
+                        <h1>
+                            <a href="topic">Lorem ipsum dolor sit amet</a> 
+                        </h1>
+                    </header>
+                    <div class="four-cols">
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                    </div>
+
+                </section>
+                <section class="fw-topic clearfix">
+                    <header>
+                        <h1>
+                            <a href="topic">Lorem ipsum dolor sit amet</a> 
+                        </h1>
+                    </header>
+                    <div class="four-cols">
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                        <article class="story">
+                            <header>
+                                <div class="meta">
+                                    <time datetime="">10:31 ngày 30/09/2014</time>
+                                </div>
+                                <figure class="cover">
+                                    <a href="article.html">
+                                        <img src="Tempdata/site/img-feature-2.jpg">
+                                    </a>
+                                </figure>
+                                <h1 class="title"><a href="article.html">Mekong River at risk as Laos forges ahead</a>
+                                </h1>
+                            </header>
+                        </article>
+                    </div>
+                </section>
+            </section>
+            <!-- framework list topic  -->
+            
+        </main>
+        <div class="sidebar">
+            <span style="font-size: 50px;">Sidebar Zone</span>
+        </div>
+
+    </div>
+    <footer id="site-footer">
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <a href="#">
+                        <img src="App_Themes/img/logo.png" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="copyright">
+                    Editor-in-Chief:
+                    <strong>Nguyen Quang Thong</strong>
+                    <br>248 Cong Quynh St . , Distr. 1, HCMC, Vietnam. Tel: (84-8) 39255738 - Fax: (84-8) 39255901
+                    <br>Email: admin@thanhniennews.com
+                    <br>Thanh Nien is the tribune of Vietnam’s Youth Association
+                    <br>Publication permit No. 14/GP-BC, granted by Press Department, Vietnam Ministry of Culture and Information.
+                    <br>Copyright © 2008 by Thanhniennews.com. All rights reserved. [ Privacy policy ]
+                </div>
+                <div class="powerby">
+                    <span>Powered by</span>
+                    <a href="http://www.baomoi.com/">
+                        <img src="App_Themes/img/epi-logo.jpg" width="60" height="43" a lt="epi">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--./ SITE FOOTER-->
+
+    <!-- JS Global Compulsory -->
+    <script src="Jscripts/vendor/jquery-1.10.2.min.js"></script>
+    <script src="Jscripts/vendor/bootstrap.min.js"></script>
+    <script>
+    (function($, d) {
+        $.each(readyQ, function(i, f) {
+            $(f)
+        });
+        $.each(bindReadyQ, function(i, f) {
+            $(d).bind("ready", f)
+        })
+    })(jQuery, document)
+    </script>
+
+
+    <!-- JS Implementing Plugins -->
+    <script src="Jscripts/plugins.js"></script>
+    <script src="Jscripts/vendor/jquery-match-height-master/jquery.matchHeight-min.js"></script>
+    <div id="source-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Source Code</h4>
+                </div>
+                <div class="modal-body">
+                    <pre></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

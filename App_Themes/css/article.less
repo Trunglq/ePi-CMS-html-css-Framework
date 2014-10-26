@@ -1,0 +1,410 @@
+@import "normalize.css" screen, projection;
+@import "components.css" screen, projection;
+@import "main.css" screen, projection;
+
+/*
+ * define variable
+ */
+
+@base: #000;
+
+@link : #004966;
+
+@active: #c41f25;
+
+@border: #ddd;
+
+
+/* 
+ * article style
+ */
+
+.main-article{
+    position:relative;
+    &>header{ // header article 
+        h1{
+            font-size:35px;
+            margin-bottom:5px;
+            font-weight:bold;
+            line-height:1.42857143em;
+            color: @active;
+        }
+        .meta{
+            margin-bottom:10px;
+            .author-time{
+                float: left;
+                margin-right: 10px;
+                span.author{
+                    display: inline;
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+                time{
+                    color:#999;
+                    display: inline;
+                    font-style: italic;
+                    font-size: 12px;
+                }
+            }
+            .social{
+                float: right;
+            }
+        }
+        summary.sapo{
+            font-style: italic;
+            font-size: 14px;
+            line-height:1.42857143em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    }
+    .social{
+        display: inline;
+        ul{
+            li{
+                float: left;
+                margin-right: 5px;
+            }
+        }
+    }
+    &>article{ //main article content
+        float:left;
+        width:540px;
+        .content{ 
+            line-height:1.42857143em;
+            font-size: 14px;
+            p,
+            div,
+            h3,
+            h4,
+            h5
+            {
+                margin-bottom:10px;
+            }
+        }
+        /* -------------- */
+        .full-img{
+            display:block;
+            width:100%;
+            margin-bottom:15px;
+            img{
+                margin-bottom:5px;
+                max-width:100%;
+                height:auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            span.fig{
+                font-size:13px;
+                color:#555;
+                font-style:italic;
+                text-align: center;
+                display: block;
+            }
+        }
+        /* -------------- */
+        .aside-img{
+            width:340px;
+            margin-bottom:15px;
+            p.thumbnail{
+                position:relative;
+                width:100%;
+                margin-bottom:0px;
+            }
+            span.fig{
+                font-size:13px;
+                color:#222;
+                font-style:italic;
+            }
+            i,em{
+                position:absolute;
+                bottom:0;
+                left:0;
+            }
+        }
+        .aside-img.pull-right{
+            margin-left:30px;
+            margin-right:0px;
+        }
+        .aside-img.pull-left{
+            margin-right:30px;
+        }
+        /* -------------- */
+        .article-photo.inlinephoto{
+            display:block;
+            margin-bottom:10px;
+            img{
+                margin-bottom:5px;
+                max-width:100%;
+                height:auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            span, .fig{
+                font-size:12px;
+                color:#222;
+                font-style:italic;
+                display: block;
+            }
+        }
+        /* -------------- */
+        .inner-article{
+            position: relative;
+            background:url(../img/fw-patten-1.png);
+            border: 1px solid #ccc;
+            overflow: inherit;
+            margin: 50px 0 30px 0px;
+            figure{
+                margin: -20px 15px 5px 15px !important;
+                box-shadow: 0 0 2px #999; 
+            }
+            header{
+                padding: 15px;
+                padding-bottom: 10px;
+                h1{
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    a{
+                        color: @link;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        /* -------------- */
+        div.quote{
+            border-left:1px solid #ccc;
+            box-shadow:-3px 0 0px #ddd;
+            font-size:16px;
+            line-height:1.4em;
+            padding:10px 10px 0px 15px;
+            font-style:italic;
+            text-indent:50px;
+            width:300px;
+            background:url('../img/fw-quote-bg.png') no-repeat 15px top ;
+            text-align:left;
+            .author{
+                font-style:normal;
+                text-align:right;
+                font-weight:bold;
+                display:block;
+                padding-top:10px;
+            }
+            img{
+                float:right;
+                margin-left:10px;
+                margin-bottom:5px;
+            }
+        }
+        .quote.pull-left{
+            margin-right:20px;
+        }
+        .quote.pull-right{
+            margin-left:30px;
+            border-right:none;
+        }
+        /* -------------- */
+        .article-poll{
+            margin-bottom:20px;
+            border:1px solid @border;
+            clear:both;
+            div,p{
+                margin-bottom:0;
+            }
+            header{
+                font-family:Arial, Helvetica, sans-serif;
+                border-bottom:1px solid @border;
+                padding:15px;
+                margin-bottom:10px;
+                background:#eee;
+                h1{
+                    font-weight:bold;
+                    font-size:20px;
+                    margin-bottom:10px;
+                }
+                a{
+                    font-size:14px;
+                }
+            }
+            .poll-topic{
+                padding:15px 0;
+                margin:0 15px;
+                border-bottom:1px solid @border;
+                h3{
+                    font-size:14px;
+                }
+                lable{
+                    font-weight:normal;
+                }
+                .multi-answers{
+                    label{
+                        display:block;
+                        margin-left:15px;
+                        margin-bottom:5px;
+                    }
+                }
+            }
+            .person-info{
+                padding:10px 0;
+                margin:0 15px;
+                .form-group{
+                    width:40%;
+                    float:left;
+                    margin-bottom:10px;
+                }
+                .form-group:nth-child(2n){
+                    float:right;
+                }
+            }
+            footer{
+                padding:15px;
+                background:#eee;
+                text-align:right;
+                h1{
+                    font-weight:bold;
+                    font-size:20px;
+                    margin-bottom:10px;
+                }
+                a{
+                    font-size:14px;
+                }
+                button{
+                    margin-left:15px;
+                }
+            }
+        }
+        /* -------------- */
+        .article-tag{
+            margin-bottom: 15px;
+            h3{
+                padding-top:2px;
+                font-size:14px;
+                text-transform:uppercase;
+                float:left;
+                margin-right:10px;
+            }
+            &>div{
+                padding-top:2px;
+                a{
+                    display: inline-block;
+                    padding: 5px 13px;
+                    border-radius: 3px;
+                    background: #eee;
+                    color: #004175;
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+                    &:hover{
+                        color:#fff;
+                        background: #ccc;
+                    }
+                }
+            }
+        }
+        .comment-zone{
+            margin-bottom:15px;
+            .box-input{
+                box-sizing:border-box;
+                border:1px solid @border;
+                position:relative;
+                padding:15px 20px;
+                margin-bottom:15px;
+                &::after{
+                    content: "";
+                    top: 3px;
+                    left: 3px;
+                    bottom: 3px;
+                    right: 3px;
+                    border:1px solid @border;
+                    position: absolute;
+                    z-index: -1;   
+                }
+            }
+            h3{
+                width:200px;
+                font-weight:bold;
+                border-bottom:1px solid @border;
+                margin:0 auto;
+                text-align:center;
+                font-size:18px;
+                text-transform:uppercase;
+                padding-bottom:5px;
+                margin-bottom:10px;
+            }
+            p.name{
+                text-transform:uppercase;
+                font-family:'roboto',Arial, Helvetica, sans-serif;
+                margin-bottom:5px;
+            }
+            textarea{
+                width:100%;
+                height:150px;
+                margin-bottom:5px;
+                padding:2%;
+            }
+            ul.note{
+                margin-bottom:10px;
+                li{
+                    float:left;
+                    width:30%;
+                    background:url('../img/fw-bullet-comment.jpg') no-repeat left 4px;
+                    font-size:12px;
+                    color:#999;
+                    padding-left:15px;
+                    &.statistic-ok{
+                        color:#00c788;
+                        font-weight:bold;
+                        background:url('../img/fw-bullet-comment-ok.jpg') no-repeat left 4px;
+                    }
+                }
+            }
+            .send-text{
+                border-top:1px solid @border;
+                padding-top:10px;
+                margin-top:10px;
+                width:200px;
+                margin:0 auto;
+                text-align:center;
+                button{
+                    background:@active;
+                    padding:5px 15px;
+                    border:none;
+                    color:#fff;
+                    cursor:pointer;
+                    &:hover{
+                        background:#777;
+                        color:#fff;
+                    }
+                }
+            }
+            .box-user-comm{
+                border:1px solid @border;
+                padding:15px;
+                .box{
+                    border-bottom: 1px solid @border;
+                    padding-bottom:10px;
+                    margin-bottom:10px;
+                    &:last-child{
+                        border-bottom: none;
+                        padding-bottom:0px;
+                        margin-bottom:0px;
+                    }
+                    .name{
+                        font-size:16px;
+                    }
+                    time{
+                        font-size:10px;
+                        color:#777;
+                    }
+                }
+            }
+        }
+    }
+    aside.mini-sidebar{
+        width: 210px;
+        float: right;
+    }
+}
+

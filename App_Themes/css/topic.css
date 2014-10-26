@@ -1,0 +1,150 @@
+@import "normalize.css" screen, projection;
+@import "components.css" screen, projection;
+@import "main.css" screen, projection;
+/*
+ * define variable
+ */
+/* 
+ * topic style 
+ */
+.list-topic .fw-feature {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dddddd;
+}
+.list-topic .fw-feature > header {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.list-topic .fw-feature > header h1 {
+  font-size: 15px;
+}
+.list-topic .fw-feature > header h1 a {
+  text-transform: uppercase;
+}
+.list-topic .fw-feature .story figure {
+  float: right;
+  width: 375px;
+  height: 250px;
+}
+.list-topic .fw-feature .story > header {
+  width: 375px;
+}
+.list-topic .fw-feature .story > header .meta time {
+  color: #c41f25;
+  font-size: 14px;
+}
+.list-topic .fw-feature .story > header .meta time:after {
+  content: "";
+}
+.list-topic .fw-feature .story > header h1.title {
+  font-weight: bold;
+  font-size: 25px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.list-topic .fw-feature .story > header summary {
+  font-size: 14px;
+}
+.list-topic .fw-topic {
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dddddd;
+}
+.list-topic .fw-topic:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+.list-topic .fw-topic > header {
+  margin-bottom: 10px;
+}
+.list-topic .fw-topic > header h1 {
+  font-size: 15px;
+}
+.list-topic .fw-topic > header h1 a {
+  text-transform: uppercase;
+}
+.list-topic .fw-topic .story figure {
+  height: 100px;
+  margin-bottom: 5px;
+}
+.list-topic .fw-topic .story > header .meta {
+  display: none;
+}
+.list-topic .fw-topic .story > header .meta time {
+  color: #c41f25;
+  font-size: 12px;
+}
+.topic-detail > header {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.topic-detail > header h1 {
+  font-size: 25px;
+}
+.topic-detail > header h1 a {
+  text-transform: uppercase;
+}
+.topic-detail .story.fw-feature {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.topic-detail .story.fw-feature figure {
+  float: right;
+  width: 375px;
+  height: 250px;
+}
+.topic-detail .story.fw-feature > header {
+  width: 375px;
+}
+.topic-detail .story.fw-feature > header .meta time {
+  color: #c41f25;
+  font-size: 14px;
+}
+.topic-detail .story.fw-feature > header .meta time:after {
+  content: "";
+}
+.topic-detail .story.fw-feature > header h1.title {
+  font-weight: bold;
+  font-size: 25px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.topic-detail .story.fw-feature > header summary {
+  font-size: 14px;
+}
+.topic-detail .story.fw-secondary {
+  margin-bottom: 20px !important;
+  padding-bottom: 10px;
+}
+.topic-detail .story.fw-secondary figure {
+  margin-top: 20px;
+  float: right;
+  width: 160px;
+  height: 120px;
+  margin-bottom: 0;
+}
+.topic-detail .story.fw-secondary > header {
+  border-top: 1px solid #dddddd;
+  padding-top: 20px;
+}
+.topic-detail .story.fw-secondary > header .meta {
+  margin-bottom: 5px;
+}
+.topic-detail .story.fw-secondary > header .meta time {
+  color: #c41f25;
+}
+.topic-detail .story.fw-secondary > header h1.title {
+  width: 200px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.topic-detail .story.fw-secondary > header summary {
+  font-size: 14px;
+}
