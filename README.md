@@ -1,5 +1,4 @@
-bmn
-===
+                    ePi
+============================================
 
-Baomoi News - html/css framework for design team 
-Trunglq - version
+ePi CMS - html/css framework for design team 
